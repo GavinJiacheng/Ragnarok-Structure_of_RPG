@@ -30,7 +30,10 @@
     <ClInclude Include="creature\Elf.h" />
     <ClInclude Include="creature\Human.h" />
     <ClInclude Include="creature\Player.h" />
+<<<<<<< HEAD
     <ClInclude Include="List\Linkedlist.h" />
+=======
+>>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
     <ClInclude Include="System\SYSTEM.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

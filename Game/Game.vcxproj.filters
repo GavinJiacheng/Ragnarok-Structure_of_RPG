@@ -71,8 +71,11 @@
     <ClInclude Include="System\SYSTEM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="List\Linkedlist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+=======
+>>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
   </ItemGroup>
 </Project>
