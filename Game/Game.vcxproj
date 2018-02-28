@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,38 +11,46 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Balrog.cpp" />
-    <ClCompile Include="Creature.cpp" />
-    <ClCompile Include="Cyberdemon.cpp" />
-    <ClCompile Include="Demon.cpp" />
-    <ClCompile Include="Elf.cpp" />
+    <ClCompile Include="battle\battle.cpp" />
+    <ClCompile Include="creature\Balrog.cpp" />
+    <ClCompile Include="creature\Creature.cpp" />
+    <ClCompile Include="creature\Cyberdemon.cpp" />
+    <ClCompile Include="creature\Demon.cpp" />
+    <ClCompile Include="creature\Elf.cpp" />
+    <ClCompile Include="creature\Human.cpp" />
+    <ClCompile Include="creature\Player.cpp" />
     <ClCompile Include="GameMain.cpp" />
-    <ClCompile Include="Human.cpp" />
+    <ClCompile Include="System\SYSTEM.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Balrog.h" />
-    <ClInclude Include="Creature.h" />
-    <ClInclude Include="Cyberdemon.h" />
-    <ClInclude Include="Demon.h" />
-    <ClInclude Include="Elf.h" />
-    <ClInclude Include="Human.h" />
+    <ClInclude Include="creature\Balrog.h" />
+    <ClInclude Include="creature\Creature.h" />
+    <ClInclude Include="creature\Cyberdemon.h" />
+    <ClInclude Include="creature\Demon.h" />
+    <ClInclude Include="creature\Elf.h" />
+    <ClInclude Include="creature\Human.h" />
+    <ClInclude Include="creature\Player.h" />
+    <ClInclude Include="System\SYSTEM.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D1FDCA5A-CCF8-4668-9379-297414E1B4BF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
