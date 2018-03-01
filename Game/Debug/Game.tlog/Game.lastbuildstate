@@ -1,12 +1,2 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
-Debug|Win32|C:\Users\Gavin\Code\Ragnarok-Cpp\|
-=======
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
-Debug|Win32|D:\C++\Classes_for_RPG\|
->>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
-=======
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
 Debug|Win32|C:\Users\Gavin\Code\Ragnarok\|
->>>>>>> add the Inventory, equipment, battle and enemies list;
