@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
@@ -33,6 +34,13 @@ int Balrog::getDamage( )
 #include <ctime> 
 #include "Balrog.h"
 using std::string;
+=======
+#include<iostream>
+#include <stdio.h>
+#include <ctime>
+#include "Balrog.h"
+
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 using std::cout;
 using std::endl;
 
@@ -56,4 +64,7 @@ int Balrog::getDamage( )
 	damage = damage + damage2;
 	return damage;
 }
+<<<<<<< HEAD
 >>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;

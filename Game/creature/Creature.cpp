@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
@@ -98,11 +99,16 @@ int Creature::getreturnexp()
 {
 	return returnexp;
 =======
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
 #include "Creature.h"
+<<<<<<< HEAD
 using std::string; 
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 
 //string Creature::getSpecies()
 //{
@@ -166,7 +172,11 @@ void Creature::maxHPadd(int num)
 	maxHP += num;
 }
 
+<<<<<<< HEAD
 void Creature::heel(int addhp)
+=======
+void Creature::heal(int addhp)
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 {
 	hitpoints += addhp;
 	if (hitpoints > maxHP)
@@ -196,5 +206,8 @@ string Creature::getName()
 int Creature::getreturnexp()
 {
 	return returnexp;
+<<<<<<< HEAD
 >>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
@@ -34,6 +35,13 @@ int Human::getDamage( )
 #include <ctime> 
 #include "Human.h"
 using std::string;
+=======
+#include<iostream>
+#include <stdio.h>
+#include <ctime>
+#include "Human.h"
+
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 using std::cout;
 using std::endl;
 
@@ -55,7 +63,13 @@ int Human::getDamage( )
 {
 	int damage;
 	damage = Creature::getDamage();
+<<<<<<< HEAD
 	cout << getSpecies( ) << " attacks for " << damage << "points!" << endl;
 	return damage;
 }
 >>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
+=======
+	cout << getName( ) << " attacks for " << damage << "points!" << endl;
+	return damage;
+}
+>>>>>>> add the Inventory, equipment, battle and enemies list;

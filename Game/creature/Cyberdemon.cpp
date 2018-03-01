@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
@@ -23,11 +24,16 @@ int Cyberdemon::getDamage( )
 	return damage;
 }
 =======
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 #include<iostream>
 #include <stdio.h>
 #include <ctime> 
 #include "Cyberdemon.h"
+<<<<<<< HEAD
 using std::string;
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 
 string Cyberdemon::getSpecies()
 {
@@ -46,4 +52,7 @@ int Cyberdemon::getDamage( )
 	damage = Demon::getDamage();
 	return damage;
 }
+<<<<<<< HEAD
 >>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Creature.h"
 #ifndef HUMAN_H
 #define HUMAN_H
@@ -20,6 +21,14 @@ class Human : public Creature
 #ifndef HUMAN_H
 #define HUMAN_H
 
+=======
+#ifndef HUMAN_H
+#define HUMAN_H
+
+#include "Creature.h"
+
+
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 
 class Human : public Creature
 {
@@ -32,5 +41,8 @@ class Human : public Creature
 		int getDamage();
 };
 
+<<<<<<< HEAD
 >>>>>>> a55dd91f28694f95712daacba48be33daa0b3276
+=======
+>>>>>>> add the Inventory, equipment, battle and enemies list;
 #endif
