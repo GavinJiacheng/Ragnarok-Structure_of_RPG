@@ -87,6 +87,21 @@ void Creature::addstrength(int news)
 	strength += news;
 }
 
+void Creature::losestrength(int olds)
+{
+	strength -= olds;
+}
+
+void Creature::adddefense(int newd)
+{
+	defense += newd;
+}
+
+void Creature::losedefense(int oldd)
+{
+	defense -= oldd;
+}
+
 string Creature::getName()
 {
 	return name;

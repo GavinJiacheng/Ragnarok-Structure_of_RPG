@@ -34,7 +34,12 @@ public:
 	void menu();
 	void attackenemies();
 	void selectmaps();
+	void showinventory();
 	void personalmenu();
+	void checkequip();
+	void visitNPC();
+	void buyfromFri();
+	void buyfromDwarf();
 };
 
 #endif

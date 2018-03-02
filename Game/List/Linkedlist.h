@@ -48,7 +48,8 @@ public:
 	{
 		if (size == 0)
 		{
-			head->item = newitem;
+			Node<Any>* newNode = new Node<Any>(newitem);
+			head = newNode;
 			head->next = NULL;
 			head->prev = NULL;
 			tail = head;
@@ -147,14 +148,16 @@ public:
 		curr = head;
 		for (int i = 1; i < index; i++)
 			curr = curr->next;
-		newitem = removecurr();
+		newitem = deletecurr();
 		return newitem;
 	}
 
 	bool isEmpty() 
 	{
-		if (head == NULL)
+		if (size == 0)
 			return true;
+		else
+			return false;
 	}
 
 	Any* pop()

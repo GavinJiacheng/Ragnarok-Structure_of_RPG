@@ -98,13 +98,13 @@
     <ClInclude Include="battle\battle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inventory\items.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inventory\Potion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inventory\equipment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inventory\items.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

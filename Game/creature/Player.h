@@ -20,6 +20,10 @@ public:
 	int getlevel();
 	void checklevel();
 	void levelup();
+	void equip(equipment* equip);
+	void unequip(equipment* equip);
+	void switchequip(equipment* equip);
+	void Doequip(equipment * Equipment);
 };
 
 #endif

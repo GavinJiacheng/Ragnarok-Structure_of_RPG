@@ -1,5 +1,5 @@
-#include "items.h"
 
+#include "items.h"
 
 items::items()
 {
@@ -24,7 +24,7 @@ items::items(string nam)
 items::items(int id, string nam, int amo, int maxam, int pri, int us)
 {
 	ID = id;
-	name = "nam";
+	name = nam;
 	amount = amo;
 	maxamount = maxam;
 	price = pri;
@@ -59,19 +59,39 @@ int items::getpri()
 int items::amountadd()
 {
 	amount++;
+	return amount;
 }
 
 int items::amountadd(int n)
 {
 	amount += n;
+	return amount;
 }
 
 int items::amountsub(int n)
 {
-	amount - +n;
+	amount += n;
+	return amount;
+}
+
+bool items::canbeused()
+{
+	return usable;
+}
+
+void * items::use(Creature * sth)
+{
+	if (getam() > 1)
+	{
+		amountsub();
+		return NULL;
+	}
+	else
+		return (void*)1;
 }
 
 int items::amountsub()
 {
 	amount--;
+	return amount;
 }

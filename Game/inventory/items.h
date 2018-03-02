@@ -1,7 +1,8 @@
 #ifndef ITEMS_H
 #define ITEMS_H
-#include<string>
-#include"..\battle\battle.h"
+#include <string>
+#include "../creature/Creature.h"
+#include "../List/Linkedlist.h"
 
 using std::cout;
 using std::endl;
@@ -29,10 +30,12 @@ public:
 	int amountadd(int n);
 	int amountsub();
 	int amountsub(int n);
+	bool canbeused();
 	virtual string getSpecies() = 0;
 	virtual void* use() = 0;
-	virtual void* use(Creature* sth) = 0;
+	virtual void* use(Creature* sth);
 	virtual void showinfo() = 0;
+	virtual bool canbeequip() = 0;
 };
 
 

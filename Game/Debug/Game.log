@@ -1,16 +1,2 @@
-﻿  items.cpp
-  Player.cpp
-  Human.cpp
-  Elf.cpp
-  Dwarf.cpp
-  Demon.cpp
-  Cyberdemon.cpp
-  Creature.cpp
-  Balrog.cpp
-  Generating Code...
-  Compiling...
-  SYSTEM.cpp
-  GameMain.cpp
-  battle.cpp
-  Generating Code...
-  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok\Debug\Game.exe
+﻿  SYSTEM.cpp
+  Game.vcxproj -> C:\Users\Gavin\Desktop\R\Debug\Game.exe

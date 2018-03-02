@@ -7,6 +7,7 @@ class potion : public items
 private:
 	int healamount;
 	string getSpecies();
+	bool canbeequip();
 public:
 	potion();
 	potion(int id, string nam, int amo, int pri, int hea);

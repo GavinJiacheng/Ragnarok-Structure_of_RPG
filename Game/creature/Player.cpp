@@ -47,3 +47,61 @@ void Player::levelup()
 	else
 		cout << "Your exp is not enough!!! You need at least " << (int)(level * 11 + pow(level, 1.2)) << " EXP! But you only have " << exp <<" EXP! \n";
 }
+
+void Player::equip(equipment* Equipment)
+{
+		int power = Equipment->getattack();
+		int def = Equipment->getarm();
+		this->addstrength(power);
+		this->adddefense(def);
+		this->Carrier::equip(Equipment);
+}
+
+void Player::unequip(equipment* Equipment)
+{
+	int power = Equipment->getattack();
+	int def = Equipment->getarm();
+	this->losestrength(power);
+	this->losedefense(def);
+	this->Carrier::unequip(Equipment);
+}
+
+void Player::switchequip(equipment* Equipment)
+{
+	int power = Equipment->getattack();
+	int def = Equipment->getarm();
+	int nowpower, nowdef;
+	if (Equipment->isweapon())
+	{
+		nowpower = getWeapon()->getattack();
+		nowdef = getWeapon()->getarm();
+	}
+	else
+	{
+		nowpower = getAromor()->getattack();
+		nowdef = getAromor()->getarm();
+	}
+	this->losestrength(nowpower);
+	this->losedefense(nowdef);
+	this->addstrength(power);
+	this->adddefense(def);
+	this->Carrier::switchequip(Equipment);
+}
+
+void Player::Doequip(equipment* Equipment)
+{
+	if (Equipment->isweapon())
+	{
+		if (getWeapon() == NULL)
+			equip(Equipment);
+		else
+			switchequip(Equipment);
+	}
+	else
+	{
+		if (getAromor() == NULL)
+			equip(Equipment);
+		else
+			switchequip(Equipment);
+	}
+}

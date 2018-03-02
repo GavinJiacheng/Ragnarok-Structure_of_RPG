@@ -6,7 +6,7 @@ equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false)
 equipment::equipment(int id, string nam, int pri, int at, int ar) :items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(true), equiped(false)
 {}
 
-equipment::equipment(int id, string nam, int pri, int at, int ar, int aromm) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false)
+equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false)
 {}
 
 void equipment::equip()
@@ -56,14 +56,21 @@ void equipment::showinfo()
 		cout << "Status: Equiped " << endl;
 	}
 	cout << "This item's id is: " << items::getID() << endl;
-	cout << "Press any key to back...." << endl;
 	system("pause");
 }
 
 string equipment::getSpecies()
 {
-	return "equipment";
+	if (weap)
+		return "Equipment-Weapon";
+	else
+		return "Equipment-Armor";
 }
 
-void* equipment::use(){}
-void* equipment::use(Creature* sth){}
+bool equipment::canbeequip()
+{
+	return true;
+}
+
+void* equipment::use() { return NULL; }
+void* equipment::use(Creature* sth) { return NULL; }
