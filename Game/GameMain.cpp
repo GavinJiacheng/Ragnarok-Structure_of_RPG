@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-	Player Hero("Hero", 1000 , 4500);
+	Player Hero("Hero", 10 , 45);
 	Player* hero = &Hero;
 	SYSTEM newgame(hero);
 	newgame.reset();
