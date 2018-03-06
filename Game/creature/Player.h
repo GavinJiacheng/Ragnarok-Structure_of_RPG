@@ -24,6 +24,7 @@ public:
 	void unequip(equipment* equip);
 	void switchequip(equipment* equip);
 	void Doequip(equipment * Equipment);
+	int getDamage();
 };
 
 #endif

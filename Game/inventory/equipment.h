@@ -2,6 +2,7 @@
 #define EQUIPMENT_H
 #include "items.h"
 
+class Player;
 class equipment : public items
 {
 private:
@@ -11,15 +12,18 @@ private:
 	bool equiped;
 	string getSpecies();
 	bool canbeequip();
+	int (*specaildamage)(Player* p);
 public:
 	equipment();
 	equipment(int id, string nam, int pri, int at, int ar);
 	equipment(int id, string nam, int pri, int at, int ar, int isaromm);
+	equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int(*damagefunc)(Player* p));
 	bool isequiped();
 	void equip();
 	void unequip();
 	bool isweapon();
 	int getattack();
+	int getdamage(Player* p);
 	int getarm();
 	void showinfo();
 	void* use();

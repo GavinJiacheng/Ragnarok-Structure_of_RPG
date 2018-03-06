@@ -105,3 +105,11 @@ void Player::Doequip(equipment* Equipment)
 			switchequip(Equipment);
 	}
 }
+
+int Player::getDamage()
+{
+	if (getWeapon() == NULL || getWeapon()->getdamage(this) == 0)
+		return Human::getDamage();
+	else
+		return getWeapon()->getdamage(this);
+}

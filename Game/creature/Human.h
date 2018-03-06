@@ -13,7 +13,7 @@ class Human : public Creature
 		Human( );
 		Human(string newName, int newStrength, int newHit, int reexp);
 		Human(string newName, int newStrength, int newHit);
-		int getDamage();
+		virtual int getDamage();
 };
 
 #endif

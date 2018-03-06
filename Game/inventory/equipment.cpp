@@ -1,12 +1,15 @@
 #include "equipment.h"
 
-equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false)
+equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false), specaildamage(NULL)
 {}
 
-equipment::equipment(int id, string nam, int pri, int at, int ar) :items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(true), equiped(false)
+equipment::equipment(int id, string nam, int pri, int at, int ar) :items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(true), equiped(false), specaildamage(NULL)
 {}
 
-equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false)
+equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), specaildamage(NULL)
+{}
+
+equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int (*damagefunc)(Player* p)) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), specaildamage((*damagefunc))
 {}
 
 void equipment::equip()
@@ -32,6 +35,13 @@ bool equipment::isequiped()
 int equipment::getattack()
 {
 	return att;
+}
+int equipment::getdamage(Player* p)
+{
+	if (specaildamage != NULL)
+		return (*specaildamage)(p);
+	else
+		return 0;
 }
 int equipment::getarm()
 {
