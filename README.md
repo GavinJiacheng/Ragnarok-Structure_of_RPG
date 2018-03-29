@@ -2,7 +2,7 @@
 A real Role-playing Game! Can equip weapons, attack, level up and use inventory.
 
 * how to play:
- use keyboard to choose the character you want to choose.<br>
+ use keyboard to choose the option you want to choose.<br>
  press key '1' can check status and level up.<br>
  press key '2' can check your equipments.<br>
  press key '3' can show all your inventory.<br>
