@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  Player.cpp
   Generating Code...
   Compiling...
@@ -12,3 +13,19 @@
   battle.cpp
   GameMain.cpp
   Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok - Copy\Debug\Game.exe
+=======
+﻿  Player.cpp
+  Generating Code...
+  Compiling...
+  SYSTEM.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  items.cpp
+  equipment.cpp
+  Potion.cpp
+  Carrier.cpp
+  Human.cpp
+  battle.cpp
+  GameMain.cpp
+  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok - Copy\Debug\Game.exe
+>>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
