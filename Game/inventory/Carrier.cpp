@@ -12,12 +12,9 @@ Carrier::Carrier()
 Carrier::~Carrier()
 {
 	delete Inventory;
-<<<<<<< HEAD
 	Inventory = NULL;
 	Weapon = NULL;
 	Armor = NULL;
-=======
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 }
 
 void Carrier::inventoryadd(items* it)

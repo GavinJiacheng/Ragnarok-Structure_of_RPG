@@ -1,6 +1,5 @@
 #include "equipment.h"
 
-<<<<<<< HEAD
 //equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false), specaildamage(NULL)
 //{}
 //
@@ -13,7 +12,7 @@
 //equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int (*damagefunc)(Player* p)) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), specaildamage((*damagefunc))
 //{}
 
-equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false), special(0)
+equipment::equipment() : items(), att(1), arm(0), weap(true), equiped(false), special(0)
 {}
 
 equipment::equipment(int id, string nam, int pri, int at, int ar) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(true), equiped(false), special(0)
@@ -23,18 +22,6 @@ equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) :
 {}
 
 equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int specialID) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), special(specialID)
-=======
-equipment::equipment() :items(), att(1), arm(0), weap(true), equiped(false), specaildamage(NULL)
-{}
-
-equipment::equipment(int id, string nam, int pri, int at, int ar) :items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(true), equiped(false), specaildamage(NULL)
-{}
-
-equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), specaildamage(NULL)
-{}
-
-equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int (*damagefunc)(Player* p)) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), specaildamage((*damagefunc))
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 {}
 
 void equipment::equip()
@@ -57,44 +44,26 @@ bool equipment::isequiped()
 	return equiped;
 }
 
-<<<<<<< HEAD
-int equipment::getspecial()
-{
-	return special;
-}
-
-=======
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 int equipment::getattack()
 {
 	return att;
 }
-<<<<<<< HEAD
-
 int equipment::getdamage(Player* p)
 {
 	if (special != 0)
-		return choosefunc(p);
+		return searchfunc(p);
 	else
 		return 0;
 }
-
-//int equipment::getdamage(Player* p)
-//{
-//	if (specaildamage != NULL)
-//		return (*specaildamage)(p);
-//	else
-//		return 0;
-//}
-=======
-int equipment::getdamage(Player* p)
+int equipment::getspecial()
 {
-	if (specaildamage != NULL)
-		return (*specaildamage)(p);
-	else
-		return 0;
+	return special;
 }
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
+int equipment::searchfunc(Player * p)
+{
+	cout << "haha" << endl;
+	return 110;
+}
 int equipment::getarm()
 {
 	return arm;
@@ -121,14 +90,6 @@ void equipment::showinfo()
 	system("pause");
 }
 
-<<<<<<< HEAD
-int equipment::choosefunc(Player * p)
-{
-	return 0;
-}
-
-=======
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 string equipment::getSpecies()
 {
 	if (weap)

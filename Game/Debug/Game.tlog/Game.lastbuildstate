@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
 Debug|Win32|C:\Users\Gavin\Code\Ragnarok - Copy\|
-=======
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
-Debug|Win32|C:\Users\Gavin\Code\Ragnarok - Copy\|
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9

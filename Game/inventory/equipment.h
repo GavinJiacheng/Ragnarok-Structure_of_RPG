@@ -12,36 +12,24 @@ private:
 	bool equiped;
 	string getSpecies();
 	bool canbeequip();
-<<<<<<< HEAD
 	int special;
 	//int (*specaildamage)(Player* p);
-=======
-	int (*specaildamage)(Player* p);
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 public:
 	equipment();
 	equipment(int id, string nam, int pri, int at, int ar);
 	equipment(int id, string nam, int pri, int at, int ar, int isaromm);
-<<<<<<< HEAD
 	//equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int(*damagefunc)(Player* p));
-	equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int specialID);
+	equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int special);
 	bool isequiped();
-	int getspecial();
-=======
-	equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int(*damagefunc)(Player* p));
-	bool isequiped();
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 	void equip();
 	void unequip();
 	bool isweapon();
 	int getattack();
 	int getdamage(Player* p);
+	int getspecial();
+	int searchfunc(Player* p);
 	int getarm();
 	void showinfo();
-<<<<<<< HEAD
-	int choosefunc(Player* p);
-=======
->>>>>>> e116e9fe4796fb1aea981cb2fe3440a6c514b4d9
 	void* use();
 	void* use(Creature* sth);
 };
