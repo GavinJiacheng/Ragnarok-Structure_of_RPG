@@ -25,6 +25,7 @@ public:
 	void switchequip(equipment* equip);
 	void Doequip(equipment * Equipment);
 	int getDamage();
+	void set_level_and_exp(int lev, int ex);
 };
 
 #endif

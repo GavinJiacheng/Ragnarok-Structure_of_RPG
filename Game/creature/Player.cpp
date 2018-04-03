@@ -113,3 +113,9 @@ int Player::getDamage()
 	else
 		return getWeapon()->getdamage(this);
 }
+
+void Player::set_level_and_exp(int lev, int ex)
+{
+	level = lev;
+	exp = ex;
+}

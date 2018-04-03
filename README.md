@@ -1,5 +1,7 @@
 # Ragnarok-Cpp
-A real Role-playing Game! Can equip weapons, attack, level up and use inventory.
+A real Role-playing Game! Can equip weapons, attack, level up and use inventory.<br>
+
+Use the library [RapidJson](https://github.com/Tencent/rapidjson) for Serialization and Deserialization.<br>
 
 * how to play:
  use keyboard to choose the option you want to choose.<br>
@@ -12,4 +14,4 @@ A real Role-playing Game! Can equip weapons, attack, level up and use inventory.
  press key '8' will reset all your hp and all your enemies.<br>
  press key 'S' will save your hero's data.<br>
 
-function of loding haven't done.
+function of Deserialization has been done, but I still have some jobs for loding.

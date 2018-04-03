@@ -22,6 +22,7 @@ public:
     void showmyequipment();
 	void earnmoney(int n);
 	void losemoney(int n);
+	void setmoney(int n);
     void additem(items* it);
     void dropitem(int i);
 	int searchitemnumer(items* it);
@@ -37,6 +38,8 @@ public:
 	virtual void equip(equipment* equip);
 	virtual void unequip(equipment* equip);
 	virtual void switchequip(equipment* equip);
+	void setwea(equipment* we);
+	void setarm(equipment* ar);
 };
 
 

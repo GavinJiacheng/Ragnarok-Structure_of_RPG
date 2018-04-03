@@ -25,6 +25,7 @@
     <ClCompile Include="inventory\equipment.cpp" />
     <ClCompile Include="inventory\items.cpp" />
     <ClCompile Include="inventory\Potion.cpp" />
+    <ClCompile Include="Serialization\Deserialization.cpp" />
     <ClCompile Include="Serialization\Serialization.cpp" />
     <ClCompile Include="System\SYSTEM.cpp" />
   </ItemGroup>
@@ -43,6 +44,7 @@
     <ClInclude Include="inventory\items.h" />
     <ClInclude Include="inventory\Potion.h" />
     <ClInclude Include="List\Linkedlist.h" />
+    <ClInclude Include="Serialization\Deserialization.h" />
     <ClInclude Include="Serialization\Serialization.h" />
     <ClInclude Include="System\SYSTEM.h" />
   </ItemGroup>

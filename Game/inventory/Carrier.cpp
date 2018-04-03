@@ -39,6 +39,11 @@ void Carrier::losemoney(int n)
     money = 0;
 }
 
+void Carrier::setmoney(int n)
+{
+	money = n;
+}
+
 void Carrier::showmyequipment()
 {
 	cout << "Weapon: ";
@@ -179,6 +184,16 @@ void Carrier::switchequip(equipment* Equipment)
 		Armor = Equipment;
 		Armor->equip();
 	}
+}
+
+void Carrier::setwea(equipment * we)
+{
+	Weapon = we;
+}
+
+void Carrier::setarm(equipment * ar)
+{
+	Armor = ar;
 }
 
 equipment* Carrier::getWeapon()

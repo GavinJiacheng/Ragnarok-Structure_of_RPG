@@ -20,6 +20,7 @@ public:
 	equipment(int id, string nam, int pri, int at, int ar, int isaromm);
 	//equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int(*damagefunc)(Player* p));
 	equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int special);
+	equipment(int id, string nam, int pri, int at, int ar, bool wea, bool equi, int specialID);
 	bool isequiped();
 	void equip();
 	void unequip();

@@ -72,6 +72,12 @@ void Creature::heal(int addhp)
 		hitpoints = maxHP;
 }
 
+void Creature::set_power_and_defense(int pow, int def)
+{
+	strength = pow;
+	defense = def;
+}
+
 int Creature::getdefense()
 {
 	return defense;

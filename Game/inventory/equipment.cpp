@@ -24,6 +24,9 @@ equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm) :
 equipment::equipment(int id, string nam, int pri, int at, int ar, int isaromm, int specialID) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(false), equiped(false), special(specialID)
 {}
 
+equipment::equipment(int id, string nam, int pri, int at, int ar, bool wea, bool equi, int specialID) : items(id, nam, 1, 1, pri, 0), att(at), arm(ar), weap(wea), equiped(equi), special(specialID)
+{}
+
 void equipment::equip()
 {
 	equiped = true;

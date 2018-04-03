@@ -35,6 +35,7 @@ public :
 	void adddefense(int newd);
 	void losedefense(int oldd);
 	void heal(int addhp);
+	void set_power_and_defense(int pow, int def);
 	int getdefense();
 	//void equip();
 	//void unequip();
