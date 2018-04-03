@@ -24,6 +24,7 @@ Serialization::Serialization(linkedlist<items>* list)
 			info_object.AddMember("usable", list->getindex(i)->canbeused(), allocator);
 			if (list->getindex(i)->getSpecies() == "Equipment-Weapon" || list->getindex(i)->getSpecies() == "Equipment-Armor")
 			{
+				info_object.AddMember("species", "equipment", allocator);
 				equipment* shit = dynamic_cast<equipment*>(list->getindex(i));
 				info_object.AddMember("att", shit->getattack(), allocator);
 				info_object.AddMember("arm", shit->getarm(), allocator);
@@ -33,6 +34,7 @@ Serialization::Serialization(linkedlist<items>* list)
 			}
 			else if (list->getindex(i)->getSpecies() == "potion")
 			{
+				info_object.AddMember("species", "potion", allocator);
 				potion* shit = dynamic_cast<potion*>(list->getindex(i));
 				info_object.AddMember("healamount", shit->gethealamount(), allocator);
 			}
