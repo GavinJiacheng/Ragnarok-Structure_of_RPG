@@ -28,6 +28,11 @@ void potion::showinfo()
 	system("pause");
 }
 
+int potion::gethealamount()
+{
+	return healamount;
+}
+
 bool potion::canbeequip()
 {
 	return false;

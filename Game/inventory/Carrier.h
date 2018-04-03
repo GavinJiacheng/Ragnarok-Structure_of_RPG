@@ -13,7 +13,7 @@ private:
 	equipment* Weapon;
 	equipment* Armor;
 public:
-Carrier();
+	Carrier();
 	~Carrier();
 	void inventoryadd(items* it);
 	int showmethemoney();
@@ -24,7 +24,9 @@ Carrier();
 	void losemoney(int n);
     void additem(items* it);
     void dropitem(int i);
+	int searchitemnumer(items* it);
 	items* getitemindexof(int i);
+	linkedlist<items>* showinventory();
 	int getweaponpower();
 	int getarmorshield();
 	equipment* getWeapon();

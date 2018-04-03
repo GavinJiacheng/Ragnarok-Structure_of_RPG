@@ -92,7 +92,7 @@ public:
 
 	Any* getindex(int index)
 	{
-		if (index > size || index < 0)
+		if (index > size || index < 1)
 			return false;
 		curr = head;
 		for (int i = 1; i < index; i++)
@@ -227,6 +227,25 @@ public:
 		return size;
 	}
 
+	int searchid(Any* pointer)
+	{
+		int ret = 0;
+		if (size == 0)
+			return ret;
+		curr = head;
+		for (ret = 1; ret < size; ret++)
+		{
+			if (pointer == curr->item)
+				return ret;
+			else
+				curr = curr->next;
+		}
+		if (pointer == curr->item)
+			return ret;
+		else
+			return 0;
+	}
+
 private:
 	template<class Any>
 	struct Node
@@ -239,7 +258,6 @@ private:
 			item = it; next = NULL; prev = NULL;
 		}
 	};
-
 	int size;
 	Node<Any>* head;
 	Node<Any>* tail;

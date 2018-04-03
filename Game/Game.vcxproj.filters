@@ -60,6 +60,9 @@
     <ClCompile Include="inventory\equipment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Serialization\Serialization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="creature\Balrog.h">
@@ -105,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inventory\items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Serialization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

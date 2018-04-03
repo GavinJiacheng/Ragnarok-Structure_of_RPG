@@ -5,11 +5,14 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+#include <fstream>
+#include <iostream>
 #include "../battle/battle.h"
 #include "../List/Linkedlist.h"
+#include "../Serialization/Serialization.h"
 
 
-using std::string;
+using namespace std;
 
 class SYSTEM
 {
@@ -32,6 +35,7 @@ public:
 	void sleep();
 	//void UI();
 	void menu();
+	void save();
 	void attackenemies();
 	void selectmaps();
 	void showinventory();

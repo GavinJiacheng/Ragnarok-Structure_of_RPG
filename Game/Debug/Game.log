@@ -1,14 +1,4 @@
-﻿  Player.cpp
+﻿  SYSTEM.cpp
+  Serialization.cpp
   Generating Code...
-  Compiling...
-  SYSTEM.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  items.cpp
-  equipment.cpp
-  Potion.cpp
-  Carrier.cpp
-  Human.cpp
-  battle.cpp
-  GameMain.cpp
-  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok - Copy\Debug\Game.exe
+  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok-Cpp-master\Debug\Game.exe

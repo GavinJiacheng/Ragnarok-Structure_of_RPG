@@ -87,6 +87,12 @@ void Carrier::dropitem(int i)
 	Inventory->remove(i);
 }
 
+int Carrier::searchitemnumer(items * it)
+{
+	int ret = Inventory->searchid(it);
+	return ret;
+}
+
 items * Carrier::getitemindexof(int i)
 {
 	if (i > 0 && !(i > Inventory->listsize()))
@@ -96,6 +102,11 @@ items * Carrier::getitemindexof(int i)
 		cout << "Illegal input i!" << endl;
 		return NULL;
 	}
+}
+
+linkedlist<items>* Carrier::showinventory()
+{
+	return Inventory;
 }
 
 int Carrier::getweaponpower()

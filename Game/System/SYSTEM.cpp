@@ -151,9 +151,30 @@ void SYSTEM::menu()
 				exe = false;
 				domenu = false;
 				break;
+			case 's':
+				save();
+				exe = false;
+				break;
+			case 'S':
+				save();
+				exe = false;
+				break;
 			}
 		}
 	}
+}
+
+void SYSTEM::save()
+{
+	//Serialization saver(pler);
+	//StringBuffer buffer;
+	//Writer<StringBuffer> writer(buffer);
+	//saver.document.Accept(writer);
+	//const char* output = buffer.GetString();
+	//ofstream outfile;
+	//outfile.open("save.dat", ios::trunc);
+	//outfile << output;
+	//outfile.close();
 }
 
 void SYSTEM::checkequip()

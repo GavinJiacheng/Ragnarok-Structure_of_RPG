@@ -14,6 +14,7 @@ public:
 	void* use(Creature* character);
 	void* use();
 	void showinfo();
+	int gethealamount();
 };
 
 #endif
