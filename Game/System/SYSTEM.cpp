@@ -179,7 +179,7 @@ void SYSTEM::save()
 	Writer<StringBuffer> writer(buffer);
 	saver.document.Accept(writer);
 	const char* output = buffer.GetString();
-	cout << saver.document["strength"].GetInt() << endl;
+	cout << output << endl;
 	ofstream outfile;
 	outfile.open("save.dat", ios::trunc);
 	outfile << output;

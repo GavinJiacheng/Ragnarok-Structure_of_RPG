@@ -1,3 +1,4 @@
+#pragma execution_character_set("utf-8")
 #include "Serialization.h"
 
 Serialization::Serialization()
@@ -17,7 +18,9 @@ Serialization::Serialization(linkedlist<items>* list)
 			rapidjson::Value info_object(rapidjson::kObjectType);
 			info_object.SetObject();
 			info_object.AddMember("ID", list->getindex(i)->getID(), allocator);
-			info_object.AddMember("name", StringRef(list->getindex(i)->getname().c_str()), allocator);
+			string newstring = list->getindex(i)->getname();
+			const char* name = newstring.data();
+			info_object.AddMember("name", Value(name, allocator).Move(), allocator);
 			info_object.AddMember("amount", list->getindex(i)->getam(), allocator);
 			info_object.AddMember("maxamount", list->getindex(i)->getmax(), allocator);
 			info_object.AddMember("price", list->getindex(i)->getpri(), allocator);
@@ -48,7 +51,9 @@ Serialization::Serialization(linkedlist<items>* list)
 
 Serialization::Serialization(Player * pler)
 {
-	Pointer("/name").Set(document, StringRef(pler->getName().c_str()));
+	string newstring = pler->getName();
+	const char* name = newstring.data();
+	Pointer("/name").Set(document, name);
 	Pointer("/strength").Set(document, pler->getstrength());
 	Pointer("/hitpoints").Set(document, pler->gethitpoints());
 	Pointer("/returnexp").Set(document, pler->getreturnexp());
