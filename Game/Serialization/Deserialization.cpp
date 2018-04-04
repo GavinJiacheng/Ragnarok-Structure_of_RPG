@@ -6,13 +6,12 @@ Deserialization::Deserialization()
 
 Deserialization::Deserialization(linkedlist<items>* list, const char * json)
 {
-	delete list;
-	list = new linkedlist<items>();
+	list->resetlist();
 	document.Parse(json);
 	int size = document["size"].GetInt();
 	const Value& nodes = document["Nodes"];
 	if (nodes.IsArray()) {
-		for (int i = 0; i < nodes.Size(); i++) {
+		for (int i = 0; i < size; i++) {
 			const Value& object = nodes[i];
 			int ID = object["ID"].GetInt();
 			string name = object["name"].GetString();
@@ -44,18 +43,18 @@ Deserialization::Deserialization(linkedlist<items>* list, const char * json)
 
 Deserialization::Deserialization(Player * pler, const char * json)
 {
-	delete pler;
-	pler = NULL;
 	document.Parse(json);
 	string name = document["name"].GetString();
 	int str = document["strength"].GetInt();
 	int hp = document["hitpoints"].GetInt();
-	Player newHero(name, str, hp);
-	pler = &newHero;
 	int money = document["money"].GetInt();
+	pler->set_name(name);
+	pler->set_hp(hp);
 	pler->setmoney(money);
 	int def = document["defense"].GetInt();
 	pler->set_power_and_defense(str, def);
+	int maxhp = document["maxhp"].GetInt();
+	pler->set_maxhp(maxhp);
 	int exp = document["exp"].GetInt();
 	int level = document["level"].GetInt();
 	pler->set_level_and_exp(level, exp);
@@ -78,4 +77,8 @@ Deserialization::Deserialization(Player * pler, const char * json)
 		equipment *Equipment = dynamic_cast<equipment *>(playersinventory->getindex(aromorID));
 		pler->setarm(Equipment);
 	}
+}
+
+Deserialization::Deserialization(SYSTEM * sys, const char * json)
+{
 }

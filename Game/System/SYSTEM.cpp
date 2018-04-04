@@ -159,6 +159,14 @@ void SYSTEM::menu()
 				save();
 				exe = false;
 				break;
+			case 'l':
+				load();
+				exe = false;
+				break;
+			case 'L':
+				load();
+				exe = false;
+				break;
 			}
 		}
 	}
@@ -171,10 +179,33 @@ void SYSTEM::save()
 	Writer<StringBuffer> writer(buffer);
 	saver.document.Accept(writer);
 	const char* output = buffer.GetString();
+	cout << saver.document["strength"].GetInt() << endl;
 	ofstream outfile;
 	outfile.open("save.dat", ios::trunc);
 	outfile << output;
 	outfile.close();
+	cout << "Save successfully!" << endl;
+	system("pause");
+}
+
+void SYSTEM::load()
+{
+	ifstream File("save.dat");
+	if (!File)
+	{
+		cerr << "No save data." << endl;
+		system("pause");
+		return;
+	}
+	else
+	{
+		char data[8192];
+		File >> data;
+		Deserialization loader(this->pler, data);
+		cerr << "Load successfully!" << endl;
+		system("pause");
+		return;
+	}
 }
 
 void SYSTEM::checkequip()
@@ -599,6 +630,7 @@ void SYSTEM::personalmenu()
 	system("cls");
 	while (domenu)
 	{
+		cout << pler->getName() << endl;
 		cout << "Your Hp is " << pler->gethitpoints() << " / " << pler->getMaxHP() << endl;
 		cout << "Your Strength is " << pler->getstrength() << "    Defense is " << pler->getdefense() << endl;
 		cout << "Your level is " << pler->getlevel() << endl;

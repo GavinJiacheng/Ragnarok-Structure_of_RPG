@@ -1,23 +1,2 @@
-﻿  Deserialization.cpp
-c:\users\gavin\code\ragnarok-cpp-master\game\serialization\deserialization.cpp(15): warning C4018: '<': signed/unsigned mismatch
-  Potion.cpp
-  equipment.cpp
-  Carrier.cpp
-  Player.cpp
-  Creature.cpp
-  Generating Code...
-  Compiling...
-  SYSTEM.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Serialization.cpp
-  items.cpp
-  GameMain.cpp
-  Human.cpp
-  Elf.cpp
-  Dwarf.cpp
-  Demon.cpp
-  Cyberdemon.cpp
-  Balrog.cpp
-  battle.cpp
+﻿  Serialization.cpp
   Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok-Cpp-master\Debug\Game.exe

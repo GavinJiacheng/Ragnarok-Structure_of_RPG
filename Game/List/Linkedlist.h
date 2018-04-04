@@ -9,8 +9,8 @@ public:
 	linkedlist()
 	{
 		head = NULL;
-		tail = head;
-		curr = head;
+		tail = NULL;
+		curr = NULL;
 		size = 0;
 	}
 
@@ -37,6 +37,28 @@ public:
 				delete delteone;
 				delteone = NULL;
 			}
+		delete curr;
+		curr = NULL;
+		head = NULL;
+		tail = NULL;
+		size = 0;
+	}
+
+	void resetlist()
+	{
+		curr = head;
+		Node<Any>* delteone;
+		for (int i = 0; i < size; i++)
+		{
+			delteone = curr;
+			curr = curr->next;
+			Any * deleteitem = delteone->item;
+			if (deleteitem != NULL) {
+				delete deleteitem;
+			}
+			delete delteone;
+			delteone = NULL;
+		}
 		delete curr;
 		curr = NULL;
 		head = NULL;

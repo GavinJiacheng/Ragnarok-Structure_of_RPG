@@ -8,6 +8,10 @@ Player::Player() : Human(), Carrier()
 Player::Player(string newName, int newStrength, int newHit) :Human(newName, newStrength, newHit), exp(0), level(1)
 {}
 
+Player::~Player()
+{
+}
+
 string Player::getSpecies()
 {
 	return "Player";

@@ -20,6 +20,10 @@ Human::Human(string newName, int newStrength, int newHit, int reexp) : Creature(
 Human::Human(string newName, int newStrength, int newHit):Creature(newName , newStrength , newHit, 0)
 {}
 
+Human::~Human()
+{
+}
+
 int Human::getDamage( )
 {
 	int damage;

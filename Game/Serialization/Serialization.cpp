@@ -53,6 +53,7 @@ Serialization::Serialization(Player * pler)
 	Pointer("/hitpoints").Set(document, pler->gethitpoints());
 	Pointer("/returnexp").Set(document, pler->getreturnexp());
 	Pointer("/defense").Set(document, pler->getdefense());
+	Pointer("/maxhp").Set(document, pler->getMaxHP());
 	Pointer("/money").Set(document, pler->showmethemoney());
 	if (pler->getWeapon() == NULL)
 		Pointer("/Weapon").Set(document, 0);

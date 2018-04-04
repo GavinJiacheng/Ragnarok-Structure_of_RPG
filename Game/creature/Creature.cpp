@@ -27,6 +27,10 @@ Creature::Creature(string newName, int newStrength, int newHit, int getexp): nam
 Creature::Creature(string newName, int newStrength, int newHit) : name(newName), strength(newStrength), hitpoints(newHit), maxHP(newHit), returnexp(0), defense(0)
 {}
 
+Creature::~Creature()
+{
+}
+
 int Creature::getDamage( )
 {
 	int damage;
@@ -81,6 +85,21 @@ void Creature::set_power_and_defense(int pow, int def)
 int Creature::getdefense()
 {
 	return defense;
+}
+
+void Creature::set_name(string newname)
+{
+	name = newname;
+}
+
+void Creature::set_hp(int hp)
+{
+	hitpoints = hp;
+}
+
+void Creature::set_maxhp(int maxhp)
+{
+	maxHP = maxhp;
 }
 	
 int Creature::gethitpoints()

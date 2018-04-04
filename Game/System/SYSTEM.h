@@ -10,6 +10,7 @@
 #include "../battle/battle.h"
 #include "../List/Linkedlist.h"
 #include "../Serialization/Serialization.h"
+#include "../Serialization/Deserialization.h"
 
 
 using namespace std;
@@ -36,6 +37,7 @@ public:
 	//void UI();
 	void menu();
 	void save();
+	void load();
 	void attackenemies();
 	void selectmaps();
 	void showinventory();

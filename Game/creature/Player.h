@@ -15,6 +15,7 @@ private:
 public:
 	Player();
 	Player(string newName, int newStrength, int newHit);
+	~Player();
 	void expincrease(int n);
 	int getexp();
 	int getlevel();
