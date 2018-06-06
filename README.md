@@ -28,3 +28,7 @@ Use the library [RapidJson](https://github.com/Tencent/rapidjson) for Serializat
         * It will save your hero's data.
     * pressing key 'L':
         * It will load your hero's data.
+
+
+# The Code structure:
+![Alt text](https://github.com/Jiachenggavin/Ragnarok-Structure_of_RPG/raw/master/Screenshots/uml1.png)
