@@ -1,0 +1,21 @@
+﻿  battle.cpp
+  Balrog.cpp
+  Creature.cpp
+  Cyberdemon.cpp
+  Demon.cpp
+  Dwarf.cpp
+  Elf.cpp
+  Human.cpp
+  Player.cpp
+  GameMain.cpp
+  Carrier.cpp
+  equipment.cpp
+  items.cpp
+  Potion.cpp
+  Deserialization.cpp
+  Serialization.cpp
+  SYSTEM.cpp
+  Generating code
+  All 707 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok-Cpp-master-offline\Release\Game.exe
