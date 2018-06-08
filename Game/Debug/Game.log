@@ -1,2 +1,19 @@
-﻿  Serialization.cpp
-  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok-Cpp-master\Debug\Game.exe
+﻿  SYSTEM.cpp
+  Serialization.cpp
+  Deserialization.cpp
+  Potion.cpp
+  items.cpp
+  equipment.cpp
+  Carrier.cpp
+  GameMain.cpp
+  Player.cpp
+  Human.cpp
+  Elf.cpp
+  Dwarf.cpp
+  Demon.cpp
+  Cyberdemon.cpp
+  Creature.cpp
+  Balrog.cpp
+  battle.cpp
+  Generating Code...
+  Game.vcxproj -> C:\Users\Gavin\Code\Ragnarok-Cpp-master-offline\Debug\Game.exe
